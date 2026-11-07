@@ -9,7 +9,7 @@ const API_BASE = (() => {
     return '/api';
   }
   if (host.endsWith('.pages.dev')) {
-    return 'https://ksom-guesthouse-worker.office-896.workers.dev/api';
+    return 'https://ksom-guesthouse-worker.portal-8b3.workers.dev/api';
   }
   if (host === 'localhost' || host === '127.0.0.1') {
     return 'http://localhost:8787/api';

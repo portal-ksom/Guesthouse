@@ -6,9 +6,9 @@
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
-    "db:migrate": "wrangler d1 execute ksom-guesthouse-db --file=src/db/schema.sql",
+    "db:migrate": "wrangler d1 execute ksom-guesthouse-db --remote --file=src/db/schema.sql",
     "db:migrate:local": "wrangler d1 execute ksom-guesthouse-db --local --file=src/db/schema.sql",
-    "db:seed": "wrangler d1 execute ksom-guesthouse-db --file=src/db/seed.sql",
+    "db:seed": "wrangler d1 execute ksom-guesthouse-db --remote --file=src/db/seed.sql",
     "db:seed:local": "wrangler d1 execute ksom-guesthouse-db --local --file=src/db/seed.sql"
   },
   "dependencies": {
